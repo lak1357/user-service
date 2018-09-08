@@ -11,9 +11,9 @@ public class MockFactory {
 
 		List<User> mockList = new ArrayList<>();
 		mockList.add(new User(1, "Lakshitha", "Herath"));
-		mockList.add(new User(1, "Mark", "Anderson"));
-		mockList.add(new User(1, "Jhon", "Smith"));
-		mockList.add(new User(1, "New", "User"));
+		mockList.add(new User(2, "Mark", "Anderson"));
+		mockList.add(new User(3, "Jhon", "Smith"));
+		mockList.add(new User(4, "New", "User"));
 
 		return mockList;
 	}
