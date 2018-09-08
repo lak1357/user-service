@@ -28,7 +28,7 @@ jobs:
           name: Publish application to docker hub
           command: |
             docker login -u $DOCKER_HUB_USER_ID -p $DOCKER_HUB_PWD
-            docker tag $DOCKER_HUB_USER_ID/user-service:$CIRCLE_SHA1 $DOCKER_HUB_USER_ID/account-service:$CIRCLE_SHA1
-            docker tag $DOCKER_HUB_USER_ID/user-service:$CIRCLE_SHA1 $DOCKER_HUB_USER_ID/account-service:latest
+            docker tag $DOCKER_HUB_USER_ID/user-service:$CIRCLE_SHA1 $DOCKER_HUB_USER_ID/user-service:$CIRCLE_SHA1
+            docker tag $DOCKER_HUB_USER_ID/user-service:$CIRCLE_SHA1 $DOCKER_HUB_USER_ID/user-service:latest
             docker push $DOCKER_HUB_USER_ID/user-service:$CIRCLE_SHA1
             docker push $DOCKER_HUB_USER_ID/user-service:latest
